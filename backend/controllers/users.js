@@ -1,8 +1,8 @@
-import User from "../models/User";
+import User from "../models/User.js";
 
 // read
 
-export const getUser = async (req, res) => {
+export const getUsers = async (req, res) => {
   try {
     const { id } = req.params;
     const user = await User.findById(id);
